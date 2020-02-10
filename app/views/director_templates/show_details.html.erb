@@ -1,0 +1,50 @@
+<h1>
+  Director #<%= @director.id %> details
+</h1>
+
+<a href="/directors/<%= @director.id %>/edit">
+  Edit director
+</a>
+
+<hr>
+
+<dl>
+  <dt>
+    Dob
+  </dt>
+  <dd>
+    <%= @director.dob %>
+  </dd>
+
+  <dt>
+    Name
+  </dt>
+  <dd>
+    <%= @director.name %>
+  </dd>
+
+  <dt>
+    Bio
+  </dt>
+  <dd>
+    <%= @director.bio %>
+  </dd>
+
+  <dt>
+    Image
+  </dt>
+  <dd>
+    <img src="<%= @director.image %>" width="320">
+  </dd>
+
+</dl>
+
+<a href="/delete_director/<%= @director.id %>" class="btn btn-danger">
+  Delete director
+</a>
+
+<hr>
+
+<a href="/directors">
+  Go back
+</a>

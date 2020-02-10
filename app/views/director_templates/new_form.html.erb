@@ -1,0 +1,53 @@
+<h1>
+  Add a new director
+</h1>
+
+<hr>
+
+<form action="/create_director" >
+  <!-- Label and input for dob -->
+  <div class="form-group">
+    <label for="dob">
+      Dob
+    </label>
+
+    <input type="text" id="dob" name="dob" class="form-control" value="<%= @director.dob %>">
+  </div>
+
+  <!-- Label and input for name -->
+  <div class="form-group">
+    <label for="name">
+      Name
+    </label>
+
+    <input type="text" id="name" name="name" class="form-control" value="<%= @director.name %>">
+  </div>
+
+  <!-- Label and input for bio -->
+  <div class="form-group">
+    <label for="bio">
+      Bio
+    </label>
+
+    <textarea id="bio" name="bio" class="form-control" rows="3"><%= @director.bio %></textarea>
+  </div>
+
+  <!-- Label and input for image -->
+  <div class="form-group">
+    <label for="image">
+      Image url
+    </label>
+
+    <input type="text" id="image" name="image" class="form-control" value="<%= @director.image %>">
+  </div>
+
+  <button class="btn btn-block btn-outline-secondary">
+    Create director
+  </button>
+</form>
+
+<hr>
+
+<a href="/directors">
+  Go back
+</a>
